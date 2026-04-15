@@ -11,7 +11,7 @@ import {
 
 export function ProductDashboard() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
-  const delivery_guarantee = 3589
+  const delivery_guarantee = 3700
   const financialSummary = useMemo(() => {
     const activeProducts = prooducts.filter((p) => p.quantity > 0)
 
@@ -171,6 +171,14 @@ export function ProductDashboard() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
+                <div>
+                  <p className="text-sm font-semibold tracking-wide text-neutral-400 uppercase">
+                    Delivery Guarantee
+                  </p>
+                  <p className="text-3xl font-bold text-purple-400">
+                    {formatCOP(delivery_guarantee)}
+                  </p>
+                </div>
                 {/* Investment */}
                 <div className="space-y-2">
                   <p className="text-sm font-semibold tracking-wide text-neutral-400 uppercase">

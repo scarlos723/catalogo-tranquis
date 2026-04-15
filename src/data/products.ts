@@ -2,7 +2,7 @@ export const prooducts = [
   {
     id: 1,
     name: "Pin P- Chan Ranma 1/2",
-    cop_cost_price: 4161,
+    cop_cost_price: 4290,
     cop_sell_price: 12000,
     description: "Pin metalico de 3.4cm de ancho por 3.6cm de alto",
     quantity: 1,
@@ -12,7 +12,7 @@ export const prooducts = [
   {
     id: 2,
     name: "Pin Pato amarillo con cuchillo",
-    cop_cost_price: 4198,
+    cop_cost_price: 4290,
     cop_sell_price: 12000,
     description: "Pin metalico de 3.4cm de ancho por 3.6cm de alto",
     quantity: 1,
@@ -22,7 +22,7 @@ export const prooducts = [
   {
     id: 3,
     name: "Pin Meme, This is fine",
-    cop_cost_price: 4549,
+    cop_cost_price: 4650,
     cop_sell_price: 12000,
     description: "Pin metalico de 2.8cm de ancho por 3.4cm de alto",
     quantity: 1,
@@ -32,7 +32,7 @@ export const prooducts = [
   {
     id: 4,
     name: "2 pares de medias Skull",
-    cop_cost_price: 8352,
+    cop_cost_price: 8590,
     cop_sell_price: 20000,
     description:
       "Par de medias blancas y negras, con diseño de calavera 20cm de largo	8cm de ancho y 18cm de alto",
@@ -54,7 +54,7 @@ export const prooducts = [
     id: 6,
     name: "2 Pines Ranma 1/2",
     cop_cost_price: 3719,
-    cop_sell_price: 20000,
+    cop_sell_price: 22000,
     description:
       "Pin metalico Ranma 2,54m de ancho por 3.56cm de alto. P-Chan 2.28cm ancho por 3.56cm de alto  ",
     quantity: 1,
@@ -168,7 +168,7 @@ export const prooducts = [
     id: 17,
     name: "Expansor 12mm Negro",
     cop_cost_price: 21561,
-    cop_sell_price: 40000,
+    cop_sell_price: 35000,
     description: "Expansor Negro de 12mm de diámetro con manos de calavera",
     quantity: 1,
     image:
@@ -178,7 +178,7 @@ export const prooducts = [
     id: 18,
     name: "Resaltadores Neon 6 Colores",
     cop_cost_price: 14792,
-    cop_sell_price: 30000,
+    cop_sell_price: 25000,
     description: "Resaltadores tonos de Neon 6 Colores",
     quantity: 1,
     image:
