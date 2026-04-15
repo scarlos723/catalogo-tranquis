@@ -1,0 +1,6 @@
+# Robots.txt for Catálogo Tranquis
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://catalogo-tranquis.vercel.app/sitemap.xml
