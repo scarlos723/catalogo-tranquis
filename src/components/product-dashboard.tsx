@@ -62,7 +62,7 @@ export function ProductDashboard() {
             Revisión de productos para aprobación de compra
           </p>
           <code>
-            <span>Criterios de busqueda de productos :</span>
+            <span className="font-bold">Criterios de busqueda: </span>
             <span>Anime, Pines, Expansores 12mm, Medias Skate, Lapiceros</span>
           </code>
         </div>
