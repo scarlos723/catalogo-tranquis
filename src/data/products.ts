@@ -2,7 +2,7 @@ export const prooducts = [
   {
     id: 1,
     name: "Pin P- Chan Ranma 1/2",
-    cop_cost_price: 4290,
+    cop_cost_price: 2431,
     cop_sell_price: 12000,
     description: "Pin metalico de 3.4cm de ancho por 3.6cm de alto",
     quantity: 1,
@@ -12,7 +12,7 @@ export const prooducts = [
   {
     id: 2,
     name: "Pin Pato amarillo con cuchillo",
-    cop_cost_price: 4290,
+    cop_cost_price: 2559,
     cop_sell_price: 12000,
     description: "Pin metalico de 3.4cm de ancho por 3.6cm de alto",
     quantity: 1,
@@ -21,29 +21,29 @@ export const prooducts = [
   },
   {
     id: 3,
-    name: "Pin Meme, This is fine",
-    cop_cost_price: 4650,
+    name: "Pin Puro Hueso",
+    cop_cost_price: 2714,
     cop_sell_price: 12000,
     description: "Pin metalico de 2.8cm de ancho por 3.4cm de alto",
-    quantity: 1,
+    quantity: 2,
     image:
-      "https://img.kwcdn.com/product/open/2023-01-26/1674745994552-a16e34afddc947ebb8e68d9dd376cdbf-goods.jpeg?imageView2/2/w/800/q/70/format/avif",
+      "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/1a2febce0e10ab620676670720e2c69d.jpg?imageView2/2/w/800/q/70/format/avif",
   },
   {
     id: 4,
-    name: "2 pares de medias Skull",
-    cop_cost_price: 8590,
+    name: "Par de medias Skull",
+    cop_cost_price: 5380,
     cop_sell_price: 20000,
     description:
-      "Par de medias blancas y negras, con diseño de calavera 20cm de largo	8cm de ancho y 18cm de alto",
+      "Par de medias blancas, con diseño de calavera 22.5cm de largo	8.5cm de ancho y 23cm de alto",
     quantity: 1,
     image:
-      "https://img.kwcdn.com/product/fancy/aba99b4f-3c63-43d6-8c0e-7d9343f535ef.jpg?imageView2/2/w/1300/q/90/format/avif",
+      "https://img.kwcdn.com/product/fancy/bdd19ed2-d4dd-4ef6-afd9-3ca316756816.jpg?imageView2/2/w/1300/q/90/format/avif",
   },
   {
     id: 5,
     name: "6 lapiceros Grafica Asiatica Tradicional",
-    cop_cost_price: 5890,
+    cop_cost_price: 6663,
     cop_sell_price: 15000,
     description: "Lapiceros de la marca Grafica, estilo asiatico tradicional",
     quantity: 1,
@@ -53,8 +53,8 @@ export const prooducts = [
   {
     id: 6,
     name: "2 Pines Ranma 1/2",
-    cop_cost_price: 3719,
-    cop_sell_price: 22000,
+    cop_cost_price: 3793,
+    cop_sell_price: 20000,
     description:
       "Pin metalico Ranma 2,54m de ancho por 3.56cm de alto. P-Chan 2.28cm ancho por 3.56cm de alto  ",
     quantity: 1,
@@ -64,7 +64,7 @@ export const prooducts = [
   {
     id: 7,
     name: "Pin Luna Soul Liter",
-    cop_cost_price: 2633,
+    cop_cost_price: 2778,
     cop_sell_price: 12000,
     description: "Pin metalico de 2.79cm de ancho por 2.79m de alto",
     quantity: 1,
@@ -74,7 +74,7 @@ export const prooducts = [
   {
     id: 8,
     name: "Pin Attack on Titan",
-    cop_cost_price: 3071,
+    cop_cost_price: 4198,
     cop_sell_price: 12000,
     description: "Pin metalico de 2.7cm de ancho por 3.7m de alto",
     quantity: 1,
@@ -82,19 +82,9 @@ export const prooducts = [
       "https://img.kwcdn.com/product/open/494f3aa00cdf4b10affe3e40460ee819-goods.jpeg?imageView2/2/w/800/q/70/format/avif",
   },
   {
-    id: 9,
-    name: "Pin Corage el perro cobarde",
-    cop_cost_price: 2081,
-    cop_sell_price: 12000,
-    description: "Pin metalico de 2.29cm de ancho por 3.79cm de alto",
-    quantity: 1,
-    image:
-      "https://img.kwcdn.com/product/fancy/b568ee9b-8358-46d6-b464-9c298d0c3853.jpg?imageView2/2/w/800/q/70/format/avif",
-  },
-  {
     id: 10,
     name: "Pin digimon",
-    cop_cost_price: 2523,
+    cop_cost_price: 2891,
     cop_sell_price: 12000,
     description: "Pin metalico de 3cm de ancho por 2.6cm de alto",
     quantity: 1,
@@ -104,7 +94,7 @@ export const prooducts = [
   {
     id: 11,
     name: "Medias Casuales Atleticas Blanco y Negro",
-    cop_cost_price: 7181,
+    cop_cost_price: 7708,
     cop_sell_price: 20000,
     description:
       "Par de medias casuales atleticas L:	22.5cm de largo	8.5cm de ancho y	17cm de alto",
@@ -115,7 +105,7 @@ export const prooducts = [
   {
     id: 12,
     name: "Medias Casuales Atleticas Blanco y Verde",
-    cop_cost_price: 11967,
+    cop_cost_price: 7225,
     cop_sell_price: 20000,
     description:
       "Par de medias casuales atleticas L:	22.5cm de largo	8.5cm de ancho y	17cm de alto",
@@ -137,7 +127,7 @@ export const prooducts = [
   {
     id: 14,
     name: "Pin Gorillaz",
-    cop_cost_price: 2829,
+    cop_cost_price: 2394,
     cop_sell_price: 12000,
     description: "Pin metalico de 3.3cm de ancho por 1.78cm de alto",
     quantity: 1,
@@ -147,7 +137,7 @@ export const prooducts = [
   {
     id: 15,
     name: "Expansor 12mm Transparente",
-    cop_cost_price: 12100,
+    cop_cost_price: 12667,
     cop_sell_price: 30000,
     description: "Expansor de 12mm de diámetro, transparente con blanco",
     quantity: 1,
@@ -156,18 +146,18 @@ export const prooducts = [
   },
   {
     id: 16,
-    name: "Pin invasor Zim",
-    cop_cost_price: 2475,
-    cop_sell_price: 12000,
-    description: "Pin metalico de 2.3cm de ancho por 2.9cm de alto",
+    name: "Pin invasor Zim 4 unidades",
+    cop_cost_price: 6960,
+    cop_sell_price: 40000,
+    description: "Pin metalico de 2.3cm de ancho por 2.9cm de alto cada uno",
     quantity: 1,
     image:
-      "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/cc58c578dc6b8f4b8f35fe437ff438ef.jpg?imageView2/2/w/800/q/70/format/avif",
+      "https://img.kwcdn.com/product/fancy/a50423e4-fd2e-4197-8ad4-a7e8069c6532.jpg?imageView2/2/w/1300/q/90/format/avif",
   },
   {
     id: 17,
     name: "Expansor 12mm Negro",
-    cop_cost_price: 21561,
+    cop_cost_price: 11461,
     cop_sell_price: 35000,
     description: "Expansor Negro de 12mm de diámetro con manos de calavera",
     quantity: 1,
@@ -176,12 +166,12 @@ export const prooducts = [
   },
   {
     id: 18,
-    name: "Resaltadores Neon 6 Colores",
-    cop_cost_price: 14792,
+    name: "Resaltadores 6 Colores",
+    cop_cost_price: 8580,
     cop_sell_price: 25000,
-    description: "Resaltadores tonos de Neon 6 Colores",
+    description: "Resaltadores tonos pastel 6 Colores",
     quantity: 1,
     image:
-      "https://img.kwcdn.com/product/fancy/7fa0b2e3-cdb6-42b9-bb7f-a0865f47837f.jpg?imageView2/2/w/800/q/70/format/avif",
+      "https://img.kwcdn.com/product/fancy/01946a33-41bc-41e4-bec6-d649438dc222.jpg?imageView2/2/w/800/q/70/format/avif",
   },
 ]

@@ -11,7 +11,7 @@ import {
 
 export function ProductDashboard() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
-  const delivery_guarantee = 3700
+  const delivery_guarantee = 3613
   const financialSummary = useMemo(() => {
     const activeProducts = prooducts.filter((p) => p.quantity > 0)
 
