@@ -58,9 +58,12 @@ export function ProductDashboard() {
           <h1 className="text-5xl font-bold tracking-tight">
             Catálogo Tranquis
           </h1>
-          <p className="text-lg text-neutral-400">
-            Revisión de productos para aprobación de compra
-          </p>
+          <h2 className="text-2xl font-bold text-green-300">
+            Pedido aprobado! <br />
+          </h2>
+          <p> Creada: Apr 17, 2026</p>
+          <p> Entrega: Apr 28 - May 21</p>
+
           <code>
             <span className="font-bold">Criterios de busqueda: </span>
             <span>Anime, Pines, Expansores 12mm, Medias Skate, Lapiceros</span>
