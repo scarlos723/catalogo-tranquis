@@ -3,7 +3,7 @@ export const prooducts = [
     id: 1,
     name: "Pin P- Chan Ranma 1/2",
     cop_cost_price: 2431,
-    cop_sell_price: 12000,
+    cop_sell_price: 10000,
     description: "Pin metalico de 3.4cm de ancho por 3.6cm de alto",
     quantity: 1,
     image:
@@ -13,7 +13,7 @@ export const prooducts = [
     id: 2,
     name: "Pin Pato amarillo con cuchillo",
     cop_cost_price: 2559,
-    cop_sell_price: 12000,
+    cop_sell_price: 10000,
     description: "Pin metalico de 3.4cm de ancho por 3.6cm de alto",
     quantity: 1,
     image:
@@ -23,7 +23,7 @@ export const prooducts = [
     id: 3,
     name: "Pin Puro Hueso",
     cop_cost_price: 2714,
-    cop_sell_price: 12000,
+    cop_sell_price: 10000,
     description: "Pin metalico de 2.8cm de ancho por 3.4cm de alto",
     quantity: 2,
     image:
@@ -65,7 +65,7 @@ export const prooducts = [
     id: 7,
     name: "Pin Luna Soul Liter",
     cop_cost_price: 2778,
-    cop_sell_price: 12000,
+    cop_sell_price: 10000,
     description: "Pin metalico de 2.79cm de ancho por 2.79m de alto",
     quantity: 1,
     image:
@@ -75,7 +75,7 @@ export const prooducts = [
     id: 8,
     name: "Pin Attack on Titan",
     cop_cost_price: 4198,
-    cop_sell_price: 12000,
+    cop_sell_price: 10000,
     description: "Pin metalico de 2.7cm de ancho por 3.7m de alto",
     quantity: 1,
     image:
@@ -85,7 +85,7 @@ export const prooducts = [
     id: 10,
     name: "Pin digimon",
     cop_cost_price: 2891,
-    cop_sell_price: 12000,
+    cop_sell_price: 10000,
     description: "Pin metalico de 3cm de ancho por 2.6cm de alto",
     quantity: 1,
     image:
@@ -128,7 +128,7 @@ export const prooducts = [
     id: 14,
     name: "Pin Gorillaz",
     cop_cost_price: 2394,
-    cop_sell_price: 12000,
+    cop_sell_price: 10000,
     description: "Pin metalico de 3.3cm de ancho por 1.78cm de alto",
     quantity: 1,
     image:
