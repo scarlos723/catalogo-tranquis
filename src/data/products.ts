@@ -69,7 +69,7 @@ export const prooducts = [
   },
   {
     id: 7,
-    name: "Pin Luna Soul Liter",
+    name: "Pin Luna Soul Eater",
     cop_cost_price: 2778,
     cop_sell_price: 10000,
     description: "Pin metalico de 2.79cm de ancho por 2.79m de alto",
