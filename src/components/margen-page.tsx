@@ -19,14 +19,14 @@ export function MargenPage() {
 
   const delivery_guarantee = 3613
   const financialSummary = useMemo(() => {
-    const activeProducts = prooducts.filter((p) => p.stock > 0)
-
     const totalInvestment =
-      activeProducts.reduce((sum, p) => sum + p.cop_cost_price * p.stock, 0) +
-      delivery_guarantee
+      prooducts.reduce(
+        (sum, p) => sum + p.cop_cost_price * p.quantity_purchased,
+        0
+      ) + delivery_guarantee
 
-    const totalSalesProjection = activeProducts.reduce(
-      (sum, p) => sum + p.cop_sell_price * p.stock,
+    const totalSalesProjection = prooducts.reduce(
+      (sum, p) => sum + p.cop_sell_price * p.quantity_purchased,
       0
     )
 
@@ -41,8 +41,8 @@ export function MargenPage() {
       totalSalesProjection,
       grossProfit,
       roi,
-      itemCount: activeProducts.length,
-      unitCount: activeProducts.reduce((sum, p) => sum + p.stock, 0),
+      itemCount: prooducts.length,
+      unitCount: prooducts.reduce((sum, p) => sum + p.stock, 0),
       totalPurchased: prooducts.reduce(
         (sum, p) => sum + p.quantity_purchased,
         0
