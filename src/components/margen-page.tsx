@@ -19,15 +19,15 @@ export function MargenPage() {
 
   const delivery_guarantee = 3613
   const financialSummary = useMemo(() => {
-    const activeProducts = prooducts.filter((p) => p.quantity > 0)
+    const activeProducts = prooducts.filter((p) => p.stock > 0)
 
     const totalInvestment = activeProducts.reduce(
-      (sum, p) => sum + p.cop_cost_price * p.quantity,
+      (sum, p) => sum + p.cop_cost_price * p.stock,
       0
     ) + delivery_guarantee
 
     const totalSalesProjection = activeProducts.reduce(
-      (sum, p) => sum + p.cop_sell_price * p.quantity,
+      (sum, p) => sum + p.cop_sell_price * p.stock,
       0
     )
 
@@ -43,7 +43,8 @@ export function MargenPage() {
       grossProfit,
       roi,
       itemCount: activeProducts.length,
-      unitCount: activeProducts.reduce((sum, p) => sum + p.quantity, 0),
+      unitCount: activeProducts.reduce((sum, p) => sum + p.stock, 0),
+      totalPurchased: prooducts.reduce((sum, p) => sum + p.quantity_purchased, 0),
     }
   }, [])
 
@@ -132,8 +133,8 @@ export function MargenPage() {
             <h2 className="text-2xl font-semibold">Productos Disponibles</h2>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
               {prooducts.map((product) => {
-                const totalCost = product.cop_cost_price * product.quantity
-                const totalSell = product.cop_sell_price * product.quantity
+                const totalCost = product.cop_cost_price * product.stock
+                const totalSell = product.cop_sell_price * product.stock
                 const marginValue = totalSell - totalCost
                 const marginPercent =
                   totalCost > 0
@@ -143,19 +144,32 @@ export function MargenPage() {
                 return (
                   <Card
                     key={product.id}
-                    className="overflow-hidden border-neutral-800 bg-neutral-900 transition-colors hover:border-blue-600"
+                    className={`overflow-hidden border-neutral-800 bg-neutral-900 transition-colors hover:border-blue-600 ${
+                      product.stock === 0 ? "opacity-60" : ""
+                    }`}
                   >
                     <div className="relative h-48 overflow-hidden bg-neutral-800">
                       <img
                         src={product.image}
                         alt={product.name}
-                        className="h-full w-full cursor-pointer object-cover transition-transform duration-300 hover:scale-105"
+                        className={`h-full w-full cursor-pointer object-cover transition-transform duration-300 hover:scale-105 ${
+                          product.stock === 0 ? "grayscale" : ""
+                        }`}
                         onClick={() => setSelectedImage(product.image)}
                       />
-                      <div className="absolute top-3 right-3 rounded-full bg-blue-600 px-3 py-1 text-sm font-semibold text-white">
-                        {product.quantity} unidad
-                        {product.quantity > 1 ? "es" : ""}
+                      <div className="absolute top-3 left-3 rounded-full bg-purple-600 px-3 py-1 text-sm font-semibold text-white">
+                        Compra: {product.quantity_purchased}
                       </div>
+                      <div className="absolute top-3 right-3 rounded-full bg-blue-600 px-3 py-1 text-sm font-semibold text-white">
+                        Stock: {product.stock}
+                      </div>
+                      {product.stock === 0 && (
+                        <div className="absolute inset-0 flex items-center justify-center bg-black/60">
+                          <span className="rounded-full bg-red-600 px-4 py-2 text-lg font-bold text-white">
+                            Sin Stock
+                          </span>
+                        </div>
+                      )}
                     </div>
 
                     <CardContent className="space-y-4 p-4">
@@ -219,10 +233,18 @@ export function MargenPage() {
                 <CardTitle>Resumen Financiero</CardTitle>
                 <CardDescription>
                   {financialSummary.itemCount} tipos •{" "}
-                  {financialSummary.unitCount} unidades
+                  {financialSummary.unitCount} unidades en stock
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
+                <div>
+                  <p className="text-sm font-semibold tracking-wide text-neutral-400 uppercase">
+                    Total Comprado
+                  </p>
+                  <p className="text-3xl font-bold text-purple-400">
+                    {financialSummary.totalPurchased} unidades
+                  </p>
+                </div>
                 <div>
                   <p className="text-sm font-semibold tracking-wide text-neutral-400 uppercase">
                     Delivery Guarantee

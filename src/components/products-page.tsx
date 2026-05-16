@@ -13,6 +13,9 @@ export function ProductsPage() {
     }).format(value)
   }
 
+  const inStockProducts = prooducts.filter((p) => p.stock > 0)
+  const outOfStockProducts = prooducts.filter((p) => p.stock === 0)
+
   return (
     <div className="min-h-screen bg-neutral-950 p-6 text-neutral-50 lg:p-8">
       <div className="mx-auto mb-12 max-w-7xl">
@@ -32,40 +35,89 @@ export function ProductsPage() {
         </div>
       </div>
 
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
-        {prooducts.map((product) => (
-          <div
-            key={product.id}
-            className="overflow-hidden rounded-lg border border-neutral-800 bg-neutral-900 transition-colors hover:border-blue-600"
-          >
-            <div
-              className="relative h-48 cursor-pointer overflow-hidden"
-              onClick={() => setSelectedImage(product.image)}
-            >
-              <img
-                src={product.image}
-                alt={product.name}
-                className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
-              />
-              <div className="absolute top-3 right-3 rounded-full bg-blue-600 px-3 py-1 text-sm font-semibold text-white">
-                {product.quantity} unidad{product.quantity > 1 ? "es" : ""}
-              </div>
-            </div>
+      <div className="mx-auto max-w-7xl space-y-8">
+        <div>
+          <h2 className="mb-4 text-xl font-semibold text-green-400">
+            Disponibles ({inStockProducts.length})
+          </h2>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
+            {inStockProducts.map((product) => (
+              <div
+                key={product.id}
+                className="overflow-hidden rounded-lg border border-neutral-800 bg-neutral-900 transition-colors hover:border-blue-600"
+              >
+                <div
+                  className="relative h-48 cursor-pointer overflow-hidden"
+                  onClick={() => setSelectedImage(product.image)}
+                >
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+                  />
+                  <div className="absolute top-3 rounded-full bg-blue-600 px-3 py-1 text-sm font-semibold text-white">
+                    Stock: {product.stock}
+                  </div>
+                </div>
 
-            <div className="p-4">
-              <h3 className="mb-1 text-lg font-bold">{product.name}</h3>
-              <p className="mb-3 text-sm text-neutral-400">
-                {product.description}
-              </p>
-              <div className="border-t border-neutral-800 pt-3">
-                <p className="text-sm text-neutral-400">Precio Venta</p>
-                <p className="text-2xl font-bold text-green-400">
-                  {formatCOP(product.cop_sell_price)}
-                </p>
+                <div className="p-4">
+                  <h3 className="mb-1 text-lg font-bold">{product.name}</h3>
+                  <p className="mb-3 text-sm text-neutral-400">
+                    {product.description}
+                  </p>
+                  <div className="border-t border-neutral-800 pt-3">
+                    <p className="text-sm text-neutral-400">Precio Venta</p>
+                    <p className="text-2xl font-bold text-green-400">
+                      {formatCOP(product.cop_sell_price)}
+                    </p>
+                  </div>
+                </div>
               </div>
+            ))}
+          </div>
+        </div>
+
+        {outOfStockProducts.length > 0 && (
+          <div>
+            <h2 className="mb-4 text-xl font-semibold text-red-400">
+              Sin Stock ({outOfStockProducts.length})
+            </h2>
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
+              {outOfStockProducts.map((product) => (
+                <div
+                  key={product.id}
+                  className="overflow-hidden rounded-lg border border-red-900/50 bg-neutral-900/50 opacity-60"
+                >
+                  <div className="relative h-48 cursor-pointer overflow-hidden">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="h-full w-full object-cover grayscale"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/60">
+                      <span className="rounded-full bg-red-600 px-4 py-2 text-lg font-bold text-white">
+                        Sin Stock
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="p-4">
+                    <h3 className="mb-1 text-lg font-bold">{product.name}</h3>
+                    <p className="mb-3 text-sm text-neutral-400">
+                      {product.description}
+                    </p>
+                    <div className="border-t border-neutral-800 pt-3">
+                      <p className="text-sm text-neutral-400">Precio Venta</p>
+                      <p className="text-2xl font-bold text-green-400">
+                        {formatCOP(product.cop_sell_price)}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-        ))}
+        )}
       </div>
 
       {selectedImage && (
