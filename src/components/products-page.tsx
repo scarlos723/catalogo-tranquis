@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import { useState } from "react"
 import { prooducts } from "../data/products"
 
@@ -26,12 +25,12 @@ export function ProductsPage() {
             </h1>
             <p className="mt-2 text-xl text-neutral-400">Precios de venta</p>
           </div>
-          <Link
+          {/* <Link
             to="/margen"
             className="rounded-lg bg-amber-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-amber-700"
           >
             Acceso Tranquis
-          </Link>
+          </Link> */}
         </div>
       </div>
 
