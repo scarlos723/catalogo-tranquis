@@ -6,7 +6,7 @@ export const prooducts = [
     cop_sell_price: 10000,
     description: "Pin metalico de 3.4cm de ancho por 3.6cm de alto",
     quantity_purchased: 1,
-    stock: 1,
+    stock: 0,
     image:
       "https://img.kwcdn.com/product/open/a02daaeed4b8418f82aa28fcae918b35-goods.jpeg?imageView2/2/w/800/q/70/format/avif",
   },
