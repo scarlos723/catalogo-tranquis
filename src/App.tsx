@@ -1,10 +1,15 @@
-import { ProductDashboard } from "@/components/product-dashboard"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { ProductsPage } from "./components/products-page"
+import { MargenPage } from "./components/margen-page"
 
 export function App() {
   return (
-    <div className="dark">
-      <ProductDashboard />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ProductsPage />} />
+        <Route path="/margen" element={<MargenPage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
