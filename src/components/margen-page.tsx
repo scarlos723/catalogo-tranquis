@@ -21,10 +21,9 @@ export function MargenPage() {
   const financialSummary = useMemo(() => {
     const activeProducts = prooducts.filter((p) => p.stock > 0)
 
-    const totalInvestment = activeProducts.reduce(
-      (sum, p) => sum + p.cop_cost_price * p.stock,
-      0
-    ) + delivery_guarantee
+    const totalInvestment =
+      activeProducts.reduce((sum, p) => sum + p.cop_cost_price * p.stock, 0) +
+      delivery_guarantee
 
     const totalSalesProjection = activeProducts.reduce(
       (sum, p) => sum + p.cop_sell_price * p.stock,
@@ -44,7 +43,10 @@ export function MargenPage() {
       roi,
       itemCount: activeProducts.length,
       unitCount: activeProducts.reduce((sum, p) => sum + p.stock, 0),
-      totalPurchased: prooducts.reduce((sum, p) => sum + p.quantity_purchased, 0),
+      totalPurchased: prooducts.reduce(
+        (sum, p) => sum + p.quantity_purchased,
+        0
+      ),
     }
   }, [])
 
@@ -63,7 +65,7 @@ export function MargenPage() {
       <div className="flex min-h-screen items-center justify-center bg-neutral-950">
         <Card className="w-full max-w-md border-neutral-800 bg-neutral-900">
           <CardHeader>
-            <CardTitle>Acceso Restringido</CardTitle>
+            <CardTitle className="text-white">Acceso Restringido</CardTitle>
             <CardDescription>
               Ingresa la contraseña para ver los detalles de margen
             </CardDescription>
@@ -174,7 +176,7 @@ export function MargenPage() {
 
                     <CardContent className="space-y-4 p-4">
                       <div>
-                        <h3 className="mb-1 text-lg font-bold">
+                        <h3 className="mb-1 text-lg font-bold text-white">
                           {product.name}
                         </h3>
                         <p className="text-sm text-neutral-400">
@@ -187,7 +189,7 @@ export function MargenPage() {
                           <span className="text-neutral-400">
                             Precio Compra Unit.
                           </span>
-                          <span className="font-semibold">
+                          <span className="font-semibold text-white">
                             {formatCOP(product.cop_cost_price)}
                           </span>
                         </div>
@@ -201,7 +203,7 @@ export function MargenPage() {
                         </div>
                         <div className="mt-2 flex justify-between border-t border-neutral-800 pt-2 text-sm">
                           <span className="text-neutral-400">Total Compra</span>
-                          <span className="font-semibold">
+                          <span className="font-semibold text-white">
                             {formatCOP(totalCost)}
                           </span>
                         </div>

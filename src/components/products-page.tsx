@@ -61,7 +61,9 @@ export function ProductsPage() {
                 </div>
 
                 <div className="p-4">
-                  <h3 className="mb-1 text-lg font-bold">{product.name}</h3>
+                  <h3 className="mb-1 text-lg font-bold text-white">
+                    {product.name}
+                  </h3>
                   <p className="mb-3 text-sm text-neutral-400">
                     {product.description}
                   </p>

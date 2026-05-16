@@ -172,7 +172,7 @@ export const prooducts = [
   {
     id: 17,
     name: "Expansor 12mm Negro",
-    cop_cost_price: 11461,
+    cop_cost_price: 12461,
     cop_sell_price: 35000,
     description: "Expansor Negro de 12mm de diámetro con manos de calavera",
     quantity_purchased: 1,
