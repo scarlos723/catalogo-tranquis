@@ -96,7 +96,7 @@ export const prooducts = [
     cop_sell_price: 10000,
     description: "Pin metalico de 3cm de ancho por 2.6cm de alto",
     quantity_purchased: 1,
-    stock: 1,
+    stock: 0,
     image:
       "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/77adb72c79464c98fe48782af6256079.jpg?imageView2/2/w/800/q/70/format/avif",
   },
@@ -176,7 +176,7 @@ export const prooducts = [
     cop_sell_price: 35000,
     description: "Expansor Negro de 12mm de diámetro con manos de calavera",
     quantity_purchased: 1,
-    stock: 1,
+    stock: 0,
     image:
       "https://img.kwcdn.com/product/fancy/659e2624-5b6f-4367-b0a6-c42b69d27226.jpg?imageView2/2/w/800/q/70/format/avif",
   },
