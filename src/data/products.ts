@@ -51,7 +51,7 @@ export const prooducts = [
     cop_sell_price: 15000,
     description: "Lapiceros de la marca Grafica, estilo asiatico tradicional",
     quantity_purchased: 1,
-    stock: 1,
+    stock: 0,
     image:
       "https://img.kwcdn.com/product/fancy/9902876f-f859-4cff-af82-48b578f803f5.jpg?imageView2/2/w/800/q/70/format/avif",
   },
