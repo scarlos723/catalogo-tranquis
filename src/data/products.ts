@@ -120,7 +120,7 @@ export const prooducts = [
     description:
       "Par de medias casuales atleticas L:\t22.5cm de largo\t8.5cm de ancho y\t17cm de alto",
     quantity_purchased: 1,
-    stock: 1,
+    stock: 0,
     image:
       "https://img.kwcdn.com/product/fancy/efa92d09-45f3-4367-af55-e33e96dd4a3d.jpg?imageView2/2/w/800/q/70/format/avif",
   },
