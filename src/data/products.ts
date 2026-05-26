@@ -1,3 +1,7 @@
+import invasor1 from "@/assets/invasor-1.webp"
+import invasor2 from "@/assets/invasor-2.webp"
+import invasor3 from "@/assets/invasor-3.webp"
+import invasor4 from "@/assets/invasor-4.webp"
 export const prooducts = [
   {
     id: 1,
@@ -160,14 +164,43 @@ export const prooducts = [
   },
   {
     id: 16,
-    name: "Pin invasor Zim 4 unidades",
-    cop_cost_price: 6960,
-    cop_sell_price: 40000,
+    name: "Pin invasor Zim 1",
+    cop_cost_price: 1740,
+    cop_sell_price: 10000,
     description: "Pin metalico de 2.3cm de ancho por 2.9cm de alto cada uno",
     quantity_purchased: 1,
     stock: 1,
-    image:
-      "https://img.kwcdn.com/product/fancy/a50423e4-fd2e-4197-8ad4-a7e8069c6532.jpg?imageView2/2/w/1300/q/90/format/avif",
+    image: invasor1,
+  },
+  {
+    id: 16,
+    name: "Pin invasor Zim 2",
+    cop_cost_price: 1740,
+    cop_sell_price: 10000,
+    description: "Pin metalico de 2.3cm de ancho por 2.9cm de alto cada uno",
+    quantity_purchased: 1,
+    stock: 1,
+    image: invasor2,
+  },
+  {
+    id: 16,
+    name: "Pin invasor Zim 3",
+    cop_cost_price: 1740,
+    cop_sell_price: 10000,
+    description: "Pin metalico de 2.3cm de ancho por 2.9cm de alto cada uno",
+    quantity_purchased: 1,
+    stock: 1,
+    image: invasor3,
+  },
+  {
+    id: 16,
+    name: "Pin invasor Zim 4",
+    cop_cost_price: 1740,
+    cop_sell_price: 10000,
+    description: "Pin metalico de 2.3cm de ancho por 2.9cm de alto cada uno",
+    quantity_purchased: 1,
+    stock: 0,
+    image: invasor4,
   },
   {
     id: 17,
