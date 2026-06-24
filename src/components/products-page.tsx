@@ -1,16 +1,9 @@
 import { useState } from "react"
 import { prooducts } from "../data/products"
+import { formatCOP } from "@/lib/formatCop"
 
 export function ProductsPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
-
-  const formatCOP = (value: number) => {
-    return new Intl.NumberFormat("es-CO", {
-      style: "currency",
-      currency: "COP",
-      minimumFractionDigits: 0,
-    }).format(value)
-  }
 
   const inStockProducts = prooducts.filter((p) => p.stock > 0)
   const outOfStockProducts = prooducts.filter((p) => p.stock === 0)

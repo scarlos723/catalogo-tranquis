@@ -32,7 +32,7 @@ export const prooducts = [
     cop_sell_price: 10000,
     description: "Pin metalico de 2.8cm de ancho por 3.4cm de alto",
     quantity_purchased: 2,
-    stock: 2,
+    stock: 1,
     image:
       "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/1a2febce0e10ab620676670720e2c69d.jpg?imageView2/2/w/800/q/70/format/avif",
   },
@@ -89,7 +89,7 @@ export const prooducts = [
     cop_sell_price: 10000,
     description: "Pin metalico de 2.7cm de ancho por 3.7m de alto",
     quantity_purchased: 1,
-    stock: 1,
+    stock: 0,
     image:
       "https://img.kwcdn.com/product/open/494f3aa00cdf4b10affe3e40460ee819-goods.jpeg?imageView2/2/w/800/q/70/format/avif",
   },
@@ -173,7 +173,7 @@ export const prooducts = [
     image: invasor1,
   },
   {
-    id: 16,
+    id: 19,
     name: "Pin invasor Zim 2",
     cop_cost_price: 1740,
     cop_sell_price: 10000,
@@ -183,7 +183,7 @@ export const prooducts = [
     image: invasor2,
   },
   {
-    id: 16,
+    id: 20,
     name: "Pin invasor Zim 3",
     cop_cost_price: 1740,
     cop_sell_price: 10000,
@@ -193,7 +193,7 @@ export const prooducts = [
     image: invasor3,
   },
   {
-    id: 16,
+    id: 21,
     name: "Pin invasor Zim 4",
     cop_cost_price: 1740,
     cop_sell_price: 10000,

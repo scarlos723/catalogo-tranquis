@@ -9,12 +9,7 @@ import {
   CardTitle,
 } from "./ui/card"
 
-const PASSWORD = "solotranquis"
-
 export function MargenPage() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
-  const [passwordInput, setPasswordInput] = useState("")
-  const [error, setError] = useState(false)
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   const delivery_guarantee = 3613
@@ -49,58 +44,6 @@ export function MargenPage() {
       ),
     }
   }, [])
-
-  const handleLogin = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (passwordInput === PASSWORD) {
-      setIsAuthenticated(true)
-      setError(false)
-    } else {
-      setError(true)
-    }
-  }
-
-  if (!isAuthenticated) {
-    return (
-      <div className="flex min-h-screen items-center justify-center bg-neutral-950">
-        <Card className="w-full max-w-md border-neutral-800 bg-neutral-900">
-          <CardHeader>
-            <CardTitle className="text-white">Acceso Restringido</CardTitle>
-            <CardDescription>
-              Ingresa la contraseña para ver los detalles de margen
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <form onSubmit={handleLogin} className="space-y-4">
-              <div>
-                <input
-                  type="password"
-                  value={passwordInput}
-                  onChange={(e) => {
-                    setPasswordInput(e.target.value)
-                    setError(false)
-                  }}
-                  placeholder="Contraseña"
-                  className="w-full rounded-lg border border-neutral-700 bg-neutral-800 px-4 py-3 text-white placeholder-neutral-500 focus:border-blue-600 focus:outline-none"
-                />
-                {error && (
-                  <p className="mt-2 text-sm text-red-400">
-                    Contraseña incorrecta
-                  </p>
-                )}
-              </div>
-              <button
-                type="submit"
-                className="w-full rounded-lg bg-blue-600 px-4 py-3 font-semibold text-white transition-colors hover:bg-blue-700"
-              >
-                Ingresar
-              </button>
-            </form>
-          </CardContent>
-        </Card>
-      </div>
-    )
-  }
 
   const formatCOP = (value: number) => {
     return new Intl.NumberFormat("es-CO", {
