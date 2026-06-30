@@ -4,6 +4,8 @@ import charlieSale1 from "../assets/sales/charlie-2026-05-26-08-46-01.jpg"
 import panguSale1 from "../assets/sales/pangu--2026-05-24-16-07-10.jpg"
 import sebasGordoSale1 from "../assets/sales/sebas-gordo-2026-06-04 at 16.15.50.jpeg"
 import miloSale1 from "../assets/sales/milo-2026-05-16 at 18.56.14.jpeg"
+import juancaSale from "../assets/sales/juanca_comprobante_2026-06-24.jpeg"
+import kevisSale from "../assets/sales/kevin-sale-2026-07-28.jpeg"
 export const sales_clients = [
   {
     id: 1,
@@ -57,9 +59,9 @@ export const sales_clients = [
     id: 7,
     product_ids: [17],
     client_name: "Juan Ca Fractal",
-    payment_proof: null,
+    payment_proof: juancaSale,
     amount: 35000,
-    state: "Pendiente",
+    state: "Pagado",
   },
   {
     id: 8,
@@ -76,5 +78,13 @@ export const sales_clients = [
     payment_proof: null,
     amount: 20000,
     state: "Pendiente",
+  },
+  {
+    id: 10,
+    product_ids: [3, 8],
+    client_name: "Kevin Muños",
+    payment_proof: kevisSale,
+    amount: 20000,
+    state: "Pagado",
   },
 ]
