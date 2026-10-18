@@ -6,6 +6,8 @@ import sebasGordoSale1 from "../assets/sales/sebas-gordo-2026-06-04 at 16.15.50.
 import miloSale1 from "../assets/sales/milo-2026-05-16 at 18.56.14.jpeg"
 import juancaSale from "../assets/sales/juanca_comprobante_2026-06-24.jpeg"
 import kevisSale from "../assets/sales/kevin-sale-2026-07-28.jpeg"
+import estebanSale from "../assets/sales/EstebanSale-2026-06-30.jpeg"
+import magdiSale from "../assets/sales/magdi-sale.JPG"
 export const sales_clients = [
   {
     id: 1,
@@ -67,17 +69,17 @@ export const sales_clients = [
     id: 8,
     product_ids: [1],
     client_name: "Magda",
-    payment_proof: null,
+    payment_proof: magdiSale,
     amount: 10000,
-    state: "Pendiente",
+    state: "Pagado",
   },
   {
     id: 9,
     product_ids: [13],
     client_name: "Esteban",
-    payment_proof: null,
+    payment_proof: estebanSale,
     amount: 20000,
-    state: "Pendiente",
+    state: "Pagado",
   },
   {
     id: 10,
