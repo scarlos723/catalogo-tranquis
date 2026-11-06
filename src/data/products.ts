@@ -220,7 +220,7 @@ export const prooducts = [
     cop_sell_price: 16000,
     description: "Resaltadores tonos pastel 6 Colores",
     quantity_purchased: 1,
-    stock: 1,
+    stock: 0,
     image:
       "https://img.kwcdn.com/product/fancy/01946a33-41bc-41e4-bec6-d649438dc222.jpg?imageView2/2/w/800/q/70/format/avif",
   },

@@ -89,4 +89,12 @@ export const sales_clients = [
     amount: 20000,
     state: "Pagado",
   },
+  {
+    id: 11,
+    product_ids: [18],
+    client_name: "Carlos Sanchez",
+    payment_proof: null,
+    amount: 16000,
+    state: "Pendiente",
+  },
 ]
