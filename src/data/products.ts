@@ -217,7 +217,7 @@ export const prooducts = [
     id: 18,
     name: "Resaltadores 6 Colores",
     cop_cost_price: 8580,
-    cop_sell_price: 25000,
+    cop_sell_price: 16000,
     description: "Resaltadores tonos pastel 6 Colores",
     quantity_purchased: 1,
     stock: 1,
